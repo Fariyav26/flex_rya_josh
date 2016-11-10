@@ -1,0 +1,52 @@
+.body_wrap{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  width:100%;
+  background-image: url("http://img.r-witherspoon.com/2016/06/25/picnic-table-with-tablecloth-l-4a9074230a69dc75.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+div {
+  width:400px;
+}
+.header{
+  flex: 1 100%;
+}
+/*.header {
+  width: 100%;
+}*/
+.ed, .ko, .mr {
+  flex: 2 40%;
+}
+h2 {
+  font-size: 25pt;
+}
+h1 {
+  font-size:35pt;
+}
+
+img {
+  width: 350px;
+  height: 300px;
+  border-width: thick;
+  border-style: solid;
+}
+
+
+@media all and (min-width: 350px) {
+
+    .header { flex: 1 100%;}
+
+    .header { order: 1}
+    .tr { order: 2}
+    .ed { order: 3}
+    .ip { order: 4}
+    .ts { order: 5}
+    .ko { order: 6}
+    .ho { order: 7}
+    .cs { order: 8}
+    .mr { order: 9}
+    .ji { order: 10}
+    .ar { order: 11}
+}
